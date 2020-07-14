@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Roboto Slab Regular';
+    src: url('../fonts/Roboto/RobotoSlab-Regular.eot');
+    src: url('../fonts/Roboto/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto/RobotoSlab-Regular.woff') format('woff'),
+    url('../fonts/Roboto/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab Bold';
+    src: url('../fonts/Roboto/RobotoSlab-Bold.eot');
+    src: url('../fonts/Roboto/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto/RobotoSlab-Bold.woff') format('woff'),
+    url('../fonts/Roboto/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url('../fonts/Comfortaa/Comfortaa.eot');
+    src: url('../fonts/Comfortaa/Comfortaa.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Comfortaa/Comfortaa.woff') format('woff'),
+    url('../fonts/Comfortaa/Comfortaa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa Bold';
+    src: url('../fonts/Comfortaa/Comfortaa-Bold.eot');
+    src: url('../fonts/Comfortaa/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Comfortaa/Comfortaa-Bold.woff') format('woff'),
+    url('../fonts/Comfortaa/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin reg_title {
+    font-family: 'Roboto Slab Regular';
+    font-weight: 400;
+}
+@mixin bold_title {
+    font-family: 'Roboto Slab Bold';
+    font-weight: 700;
+}
+
+@mixin reg {
+    font-family: 'Comfortaa Regular';
+    font-weight: 400;
+}
+@mixin bold {
+    font-family: 'Comfortaa Bold';
+    font-weight: 700;
+}
