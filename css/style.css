@@ -139,7 +139,7 @@ button::-moz-focus-inner {
     bottom: 10%;
     -webkit-transform: translate(-50%, -10%);
             transform: translate(-50%, -10%);
-    padding: 17px 30px;
+    padding: 20px 30px 17px 30px;
     border-radius: 30px;
     font-size: 14px;
   }
@@ -238,6 +238,7 @@ button::-moz-focus-inner {
 }
 
 .navbar-burger {
+  z-index: 100;
   background-color: #fff;
   padding: 40px 0;
   position: fixed;
