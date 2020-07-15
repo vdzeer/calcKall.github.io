@@ -9,23 +9,9 @@
         justify-content: space-between
         align-items: center
     &__logo
-        // position: relative
         letter-spacing: 1px
         color: #fff
         +bold
-        // &::after, &::before
-        //     position: absolute
-        //     content: ''
-        //     width: 20px
-        //     height: 1.5px
-        //     background-color: #000
-        //     transform: rotate(-50deg)
-        // &::after
-        //     left: 28%
-        //     bottom: -9px
-        // &::before
-        //     left: 55%
-        //     top: -11px
     ul
         margin: 0 0 0 40px
         padding: 0
@@ -67,7 +53,7 @@
         border: 1px solid #fff
         border-radius: 10px
         background-color: $red
-        &.active
+        &.actived
             top: 0
         ul
             margin: 0
@@ -114,12 +100,12 @@
                 transition: all 0.3s ease 0s
             &::after
                 bottom: 0
-            &.active span 
+            &.actived span 
                 transform: scale(0)
-            &.active::before
+            &.actived::before
                 transform: rotate(45deg)
                 top: 8px
-            &.active::after
+            &.actived::after
                 transform: rotate(-45deg)
                 bottom: 6px
 

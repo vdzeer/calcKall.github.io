@@ -237,7 +237,7 @@ button::-moz-focus-inner {
   background-color: #ff5f45;
 }
 
-.navbar-burger.active {
+.navbar-burger.actived {
   top: 0;
 }
 
@@ -307,16 +307,16 @@ button::-moz-focus-inner {
   .navbar__burger::after {
     bottom: 0;
   }
-  .navbar__burger.active span {
+  .navbar__burger.actived span {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-  .navbar__burger.active::before {
+  .navbar__burger.actived::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 8px;
   }
-  .navbar__burger.active::after {
+  .navbar__burger.actived::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 6px;
