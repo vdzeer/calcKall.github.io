@@ -58,7 +58,7 @@
         display: none
     &-burger
         z-index: 100
-        padding: 30px 0
+        padding: 10px 0
         position: fixed
         top: -200%
         margin-top: 61px
@@ -127,3 +127,22 @@
     .navbar
         &-burger
             right: 13%
+
+@media (orientation: landscape)
+    .navbar
+        &-burger
+            ul
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-end
+                padding: 5px 10px
+                li 
+                    margin-bottom: 23px
+                    font-size: 20px
+                    position: relative
+                    a
+                        color: #fff
+                    &:last-child
+                        margin-bottom: 0
+    
