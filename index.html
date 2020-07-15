@@ -10,47 +10,69 @@
 
 	<!-- link tags -->
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="hero">
-		<nav class="navbar">
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-block">
+				<div class="navbar-logo">
+					<a href="index.html">
+						<span class="navbar__logo">Your Helper</span>
+					</a>
+				</div>
+				<ul id="menu">
+					<li><a href="#" class="navbar-link">Главная</a></li>
+					<li><a href="#" class="navbar-link">Калькулятор</a></li>
+					<li><a href="#" class="navbar-link">Рацион питания</a></li>
+					<li><a href="#" class="navbar-link">О нас</a></li>
+				</ul>
+				<div class="navbar__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="navbar-burger">
+		<ul>
+			<li><a href="#" class="navbar-link">Главная</a></li>
+			<li><a href="#" class="navbar-link">Калькулятор</a></li>
+			<li><a href="#" class="navbar-link">Рацион питания</a></li>
+			<li><a href="#" class="navbar-link">О нас</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active">
+			<header class="hero">
+				<div class="hero-text">
+					<span>
+						С помощью сервиса <span class="hero-text_red">Your Helper</span> Вы сможете подсчитать калорийность вашего питания
+					</span>
+				</div>
+				<a href="#" class="btn hero-btn">
+					подсчитать
+				</a>
+			</header>
+		</div>
+		<div class="section food">
 			<div class="container">
-				<div class="navbar-block">
-					<div class="navbar-logo">
-						<a href="index.html">
-							<span class="navbar__logo">Your Helper</span>
-						</a>
+				<span class="food__title">
+					Питание
+				</span>
+				<div class="food-block">
+					<div class="food-item">
+	
 					</div>
-					<ul>
-						<li><a href="#" class="navbar-link">Главная</a></li>
-						<li><a href="#" class="navbar-link">Калькулятор</a></li>
-						<li><a href="#" class="navbar-link">Рацион питания</a></li>
-						<li><a href="#" class="navbar-link">О нас</a></li>
-					</ul>
-					<div class="navbar__burger">
-						<span></span>
+					<div class="food-item">
+	
 					</div>
 				</div>
 			</div>
-		</nav>
-		<div class="navbar-burger">
-			<ul>
-				<li><a href="#" class="navbar-link">Главная</a></li>
-				<li><a href="#" class="navbar-link">Калькулятор</a></li>
-				<li><a href="#" class="navbar-link">Рацион питания</a></li>
-				<li><a href="#" class="navbar-link">О нас</a></li>
-			</ul>
 		</div>
-		<div class="hero-text">
-			<span>
-				С помощью сервиса <span class="hero-text_red">Y</span>our <span class="hero-text_red">H</span>elper Вы сможете подсчитать калорийность вашего питания
-			</span>
-		</div>
-		<a href="#" class="btn hero-btn">
-			подсчитать
-		</a>
-	</header>
+	</div>
+	
+	<script src="js/fullpage.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
