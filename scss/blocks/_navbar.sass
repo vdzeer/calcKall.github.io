@@ -77,16 +77,15 @@
             flex-direction: column
             justify-content: center
             align-items: flex-end
-            padding: 30px
+            padding: 20px
             li 
-                margin-bottom: 35px
+                margin-bottom: 27px
                 font-size: 20px
                 position: relative
                 a
                     color: #fff
                 &:last-child
                     margin-bottom: 0
-                    
 
 
 @media (max-width: 880px)
@@ -123,3 +122,8 @@
             &.active::after
                 transform: rotate(-45deg)
                 bottom: 6px
+
+@media (max-width: 575px)
+    .navbar
+        &-burger
+            right: 13%

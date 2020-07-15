@@ -186,6 +186,7 @@ html.fp-enabled,
     margin: -5px 0px 0px -5px;
 }
 #fp-nav ul li .fp-tooltip {
+    /* display: none; */
     position: absolute;
     top: -2px;
     color: #fff;

@@ -258,11 +258,11 @@ button::-moz-focus-inner {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 30px;
+  padding: 20px;
 }
 
 .navbar-burger ul li {
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   font-size: 20px;
   position: relative;
 }
@@ -320,6 +320,12 @@ button::-moz-focus-inner {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 6px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-burger {
+    right: 13%;
   }
 }
 
