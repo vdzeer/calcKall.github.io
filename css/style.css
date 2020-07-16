@@ -378,7 +378,13 @@ button::-moz-focus-inner {
 }
 
 .food-block {
-  margin-top: 70px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  height: 80vh;
+  width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,6 +398,7 @@ button::-moz-focus-inner {
 
 .food-item {
   height: 60vh;
+  width: 48%;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   border-radius: 20px;
@@ -399,6 +406,17 @@ button::-moz-focus-inner {
   -webkit-transition: .3s;
   transition: .3s;
   z-index: 1;
+}
+
+.food-item_hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 20px;
+  background-color: #000;
+  opacity: .1;
 }
 
 .food-item_first {
@@ -415,13 +433,6 @@ button::-moz-focus-inner {
 }
 
 .food-item:hover .food-item_hover {
-  -webkit-transition: .3s;
-  transition: .3s;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  border-radius: 20px;
-  background-color: #000000;
   opacity: .7;
 }
 
@@ -455,6 +466,10 @@ button::-moz-focus-inner {
     font-size: 42px;
   }
   .food-block {
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
     margin-top: 85px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -503,6 +518,10 @@ button::-moz-focus-inner {
     font-size: 32px;
   }
   .food-block {
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
     margin-top: 85px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -530,5 +549,40 @@ button::-moz-focus-inner {
     background: #fff;
     color: #004f69;
   }
+}
+
+.calc__title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -5%);
+          transform: translate(-50%, -5%);
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 1.5px;
+  font-family: 'Comfortaa Bold';
+  font-weight: 700;
+}
+
+.calc-wrapperr {
+  margin: auto;
+  width: 1400px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.calc-menu {
+  height: 600px;
+  width: 300px;
+  background-color: #000;
 }
 /*# sourceMappingURL=style.css.map */

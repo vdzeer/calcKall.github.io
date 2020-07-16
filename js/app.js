@@ -2,7 +2,7 @@
 
 const burger = document.querySelector('.navbar__burger');
 const burgerMenu = document.querySelector('.navbar-burger');
-const first = '#ff5f45', second = '#0798ec';
+const first = '#ff5f45', second = '#0798ec', third = '#fc6c7c', fouth = '#fec401';
 
 burger.addEventListener('click', () => {
     takeColor();
@@ -31,9 +31,11 @@ function takeColor() {
 
 new fullpage('#fullpage', {
     menu: 'menu',
-    anchors: ['Main', 'Food'],
-    sectionsColor: [first, second],
+    anchors: ['Main', 'Food', 'Calc'],
+    sectionsColor: [first, second, third, fouth],
+    recordHistory: false,
     scrollingSpeed: 900,
+    verticalCentered: false,
     navigation: true,
     slidesNavigation: true,
 });
