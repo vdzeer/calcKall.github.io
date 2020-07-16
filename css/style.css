@@ -145,6 +145,15 @@ button::-moz-focus-inner {
   }
 }
 
+@media (orientation: landscape) and (max-width: 880px) {
+  .hero-btn {
+    bottom: 18%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+}
+
 .navbar {
   position: fixed;
   top: 0;
