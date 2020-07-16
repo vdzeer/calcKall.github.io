@@ -24,6 +24,9 @@ function takeColor() {
         case 'd':
             burgerMenu.style.backgroundColor = second;
             break;
+        case 'c':
+            burgerMenu.style.backgroundColor = third;
+            break;
         default:
             console.error('Error');
     }
