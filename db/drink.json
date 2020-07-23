@@ -1,0 +1,116 @@
+[
+  {
+    "id": "d01",
+    "name": "Квас хлебный",
+    "image": "img/drink/01.jpg",
+    "call": 27
+  },
+  {
+    "id": "d02",
+    "name": "Кофе черный",
+    "image": "img/drink/02.jpg",
+    "call": 7
+  },
+  {
+    "id": "d03",
+    "name": "Чай с сахаром",
+    "image": "img/drink/03.jpg",
+    "call": 28
+  },
+  {
+    "id": "d04",
+    "name": "Чай с лимоном",
+    "image": "img/drink/04.jpg",
+    "call": 28
+  },
+  {
+    "id": "d05",
+    "name": "Морковный сок",
+    "image": "img/drink/05.jpg",
+    "call": 56
+  },
+  {
+    "id": "d06",
+    "name": "Свекольный сок",
+    "image": "img/drink/06.jpg",
+    "call": 61
+  },
+  {
+    "id": "d07",
+    "name": "Томатный сок",
+    "image": "img/drink/07.jpg",
+    "call": 18
+  },
+  {
+    "id": "d08",
+    "name": "Абрикосовый сок",
+    "image": "img/drink/08.jpg",
+    "call": 55
+  },
+  {
+    "id": "d09",
+    "name": "Ананасовый сок",
+    "image": "img/drink/09.jpg",
+    "call": 52
+  },
+  {
+    "id": "d10",
+    "name": "Апельсиновый сок",
+    "image": "img/drink/10.jpg",
+    "call": 60
+  },
+  {
+    "id": "d11",
+    "name": "Виноградный сок",
+    "image": "img/drink/11.jpg",
+    "call": 70
+  },
+  {
+    "id": "d12",
+    "name": "Вишневый сок",
+    "image": "img/drink/12.jpg",
+    "call": 51
+  },
+  {
+    "id": "d13",
+    "name": "Гранатовый сок",
+    "image": "img/drink/13.jpg",
+    "call": 56
+  },
+  {
+    "id": "d14",
+    "name": "Грейпфрутовый сок",
+    "image": "img/drink/14.jpg",
+    "call": 38
+  },
+  {
+    "id": "d15",
+    "name": "Лимонный сок",
+    "image": "img/drink/15.jpg",
+    "call": 33
+  },
+  {
+    "id": "d16",
+    "name": "Мандариновый сок",
+    "image": "img/drink/16.jpg",
+    "call": 36
+  },
+  {
+    "id": "d17",
+    "name": "Персиковый сок",
+    "image": "img/drink/17.jpg",
+    "call": 68
+  },
+  {
+    "id": "d18",
+    "name": "Яблочный сок",
+    "image": "img/drink/18.jpg",
+    "call": 46
+  },
+  {
+    "id": "d19",
+    "name": "Грушевый сок",
+    "image": "img/drink/19.jpg",
+    "call": 59
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "id": "o01",
+    "name": "Баклажаны",
+    "image": "img/ovoshi/01.jpg",
+    "call": 24
+  },
+  {
+    "id": "o02",
+    "name": "Брюква",
+    "image": "img/ovoshi/02.jpg",
+    "call": 37
+  },
+  {
+    "id": "o03",
+    "name": "Капуста белокач.",
+    "image": "img/ovoshi/03.jpg",
+    "call": 28
+  },
+  {
+    "id": "o04",
+    "name": "Лук порей",
+    "image": "img/ovoshi/04.jpg",
+    "call": 40
+  },
+  {
+    "id": "o05",
+    "name": "Редис",
+    "image": "img/ovoshi/05.jpg",
+    "call": 20
+  },
+  {
+    "id": "o06",
+    "name": "Салат",
+    "image": "img/ovoshi/06.jpg",
+    "call": 14
+  },
+  {
+    "id": "o07",
+    "name": "Горох зеленый",
+    "image": "img/ovoshi/07.jpg",
+    "call": 72
+  },
+  {
+    "id": "o08",
+    "name": "Кабачки",
+    "image": "img/ovoshi/08.jpg",
+    "call": 27
+  },
+  {
+    "id": "o09",
+    "name": "Капуста краснокач.",
+    "image": "img/ovoshi/09.jpg",
+    "call": 31
+  },
+  {
+    "id": "o10",
+    "name": "Капуста цветная",
+    "image": "img/ovoshi/10.jpg",
+    "call": 29
+  },
+  {
+    "id": "o11",
+    "name": "Картофель",
+    "image": "img/ovoshi/11.jpg",
+    "call": 83
+  },
+  {
+    "id": "o12",
+    "name": "Лук зеленый",
+    "image": "img/ovoshi/12.jpg",
+    "call": 22
+  },
+  {
+    "id": "o13",
+    "name": "Лук репчатый",
+    "image": "img/ovoshi/13.jpg",
+    "call": 43
+  },
+  {
+    "id": "o14",
+    "name": "Морковь",
+    "image": "img/ovoshi/14.jpg",
+    "call": 33
+  },
+  {
+    "id": "o15",
+    "name": "Огурцы",
+    "image": "img/ovoshi/15.jpg",
+    "call": 12
+  },
+  {
+    "id": "o16",
+    "name": "Перец зеленый",
+    "image": "img/ovoshi/16.jpg",
+    "call": 23
+  },
+  {
+    "id": "o17",
+    "name": "Перец красный",
+    "image": "img/ovoshi/17.jpg",
+    "call": 27
+  },
+  {
+    "id": "o18",
+    "name": "Петрушка",
+    "image": "img/ovoshi/18.jpg",
+    "call": 45
+  },
+  {
+    "id": "o19",
+    "name": "Ревень",
+    "image": "img/ovoshi/19.jpg",
+    "call": 16
+  },
+  {
+    "id": "o20",
+    "name": "Редька",
+    "image": "img/ovoshi/20.jpg",
+    "call": 34
+  },
+  {
+    "id": "o21",
+    "name": "Репа",
+    "image": "img/ovoshi/21.jpg",
+    "call": 28
+  },
+  {
+    "id": "o22",
+    "name": "Свекла",
+    "image": "img/ovoshi/22.jpg",
+    "call": 48
+  },
+  {
+    "id": "o23",
+    "name": "Помидоры",
+    "image": "img/ovoshi/23.jpg",
+    "call": 16
+  },
+  {
+    "id": "o24",
+    "name": "Фасоль зеленая",
+    "image": "img/ovoshi/24.jpg",
+    "call": 32
+  },
+  {
+    "id": "o25",
+    "name": "Хрен",
+    "image": "img/ovoshi/25.jpg",
+    "call": 71
+  },
+  {
+    "id": "o26",
+    "name": "Чеснок",
+    "image": "img/ovoshi/26.jpg",
+    "call": 106
+  },
+  {
+    "id": "o27",
+    "name": "Шпинат",
+    "image": "img/ovoshi/27.jpg",
+    "call": 21
+  }
+]

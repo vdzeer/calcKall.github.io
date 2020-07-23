@@ -1,0 +1,74 @@
+[
+  {
+    "id": "k01",
+    "name": "Булгур",
+    "image": "img/kasha/01.jpg",
+    "call": 342
+  },
+  {
+    "id": "k02",
+    "name": "Гречка",
+    "image": "img/kasha/02.jpg",
+    "call": 329
+  },
+  {
+    "id": "k03",
+    "name": "Манная",
+    "image": "img/kasha/03.jpg",
+    "call": 326
+  },
+  {
+    "id": "k04",
+    "name": "Овсяная",
+    "image": "img/kasha/04.jpg",
+    "call": 345
+  },
+  {
+    "id": "k05",
+    "name": "Перловая",
+    "image": "img/kasha/05.jpg",
+    "call": 324
+  },
+  {
+    "id": "k06",
+    "name": "Пшено",
+    "image": "img/kasha/06.jpg",
+    "call": 334
+  },
+  {
+    "id": "k07",
+    "name": "Рисовая",
+    "image": "img/kasha/07.jpg",
+    "call": 323
+  },
+  {
+    "id": "k08",
+    "name": "Пшеничная",
+    "image": "img/kasha/08.jpg",
+    "call": 325
+  },
+  {
+    "id": "k09",
+    "name": "Толокно",
+    "image": "img/kasha/09.jpg",
+    "call": 357
+  },
+  {
+    "id": "k10",
+    "name": "Ячневая",
+    "image": "img/kasha/10.jpg",
+    "call": 322
+  },
+  {
+    "id": "k11",
+    "name": "Геркулес",
+    "image": "img/kasha/11.jpg",
+    "call": 355
+  },
+  {
+    "id": "k12",
+    "name": "Кукурузная",
+    "image": "img/kasha/12.jpg",
+    "call": 325
+  }
+]

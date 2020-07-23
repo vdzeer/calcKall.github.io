@@ -1,0 +1,86 @@
+[
+  {
+    "id": "su01",
+    "name": "Курага",
+    "image": "img/suhof/01.jpg",
+    "call": 275
+  },
+  {
+    "id": "su02",
+    "name": "Изюм",
+    "image": "img/suhof/02.jpg",
+    "call": 277
+  },
+  {
+    "id": "su03",
+    "name": "Вишня",
+    "image": "img/suhof/03.jpg",
+    "call": 292
+  },
+  {
+    "id": "su04",
+    "name": "Груша",
+    "image": "img/suhof/04.jpg",
+    "call": 246
+  },
+  {
+    "id": "su05",
+    "name": "Персики",
+    "image": "img/suhof/05.jpg",
+    "call": 275
+  },
+  {
+    "id": "su06",
+    "name": "Чернослив",
+    "image": "img/suhof/06.jpg",
+    "call": 264
+  },
+  {
+    "id": "su07",
+    "name": "Яблоки",
+    "image": "img/suhof/07.jpg",
+    "call": 273
+  },
+  {
+    "id": "su08",
+    "name": "Фундук",
+    "image": "img/suhof/08.jpg",
+    "call": 704
+  },
+  {
+    "id": "su09",
+    "name": "Миндаль",
+    "image": "img/suhof/09.jpg",
+    "call": 645
+  },
+  {
+    "id": "su10",
+    "name": "Грецкий орех",
+    "image": "img/suhof/10.jpg",
+    "call": 648
+  },
+  {
+    "id": "su11",
+    "name": "Арахис",
+    "image": "img/suhof/11.jpg",
+    "call": 548
+  },
+  {
+    "id": "su12",
+    "name": "Кешью",
+    "image": "img/suhof/12.jpg",
+    "call": 600
+  },
+  {
+    "id": "su13",
+    "name": "Лещина",
+    "image": "img/suhof/13.jpg",
+    "call": 653
+  },
+  {
+    "id": "su14",
+    "name": "Финики",
+    "image": "img/suhof/14.jpg",
+    "call": 292
+  }
+]

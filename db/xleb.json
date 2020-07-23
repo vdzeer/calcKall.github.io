@@ -1,0 +1,80 @@
+[
+  {
+    "id": "x01",
+    "name": "Хлеб ржаной",
+    "image": "img/xleb/01.jpg",
+    "call": 214
+  },
+  {
+    "id": "x02",
+    "name": "Хлеб пшеничный",
+    "image": "img/xleb/02.jpg",
+    "call": 254
+  },
+  {
+    "id": "x03",
+    "name": "Сдобная выпечка",
+    "image": "img/xleb/03.jpg",
+    "call": 297
+  },
+  {
+    "id": "x04",
+    "name": "Баранки",
+    "image": "img/xleb/04.jpg",
+    "call": 312
+  },
+  {
+    "id": "x05",
+    "name": "Сушка",
+    "image": "img/xleb/05.jpg",
+    "call": 330
+  },
+  {
+    "id": "x06",
+    "name": "Сухари пшеничные",
+    "image": "img/xleb/06.jpg",
+    "call": 331
+  },
+  {
+    "id": "x07",
+    "name": "Сухари сливочные",
+    "image": "img/xleb/06.jpg",
+    "call": 397
+  },
+  {
+    "id": "x08",
+    "name": "Мука пшеничная",
+    "image": "img/xleb/08.jpg",
+    "call": 328
+  },
+  {
+    "id": "x09",
+    "name": "Мука ржаная",
+    "image": "img/xleb/09.jpg",
+    "call": 326
+  },
+  {
+    "id": "x10",
+    "name": "Мука гречневая",
+    "image": "img/xleb/10.jpg",
+    "call": 353
+  },
+  {
+    "id": "x11",
+    "name": "Мука рисовая",
+    "image": "img/xleb/08.jpg",
+    "call": 356
+  },
+  {
+    "id": "x12",
+    "name": "Мука кукурузная",
+    "image": "img/xleb/12.jpg",
+    "call": 331
+  },
+  {
+    "id": "x13",
+    "name": "Макароны",
+    "image": "img/xleb/13.jpg",
+    "call": 335
+  }
+]

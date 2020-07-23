@@ -1,0 +1,386 @@
+[
+  {
+    "id": "f01",
+    "name": "Бычки",
+    "image": "img/fish/01.jpg",
+    "call": 145
+  },
+  {
+    "id": "f02",
+    "name": "Горбуша",
+    "image": "img/fish/02.jpg",
+    "call": 147
+  },
+  {
+    "id": "f03",
+    "name": "Камбала",
+    "image": "img/fish/03.jpg",
+    "call": 88
+  },
+  {
+    "id": "f04",
+    "name": "Карась",
+    "image": "img/fish/04.jpg",
+    "call": 87
+  },
+  {
+    "id": "f05",
+    "name": "Карп",
+    "image": "img/fish/05.jpg",
+    "call": 96
+  },
+  {
+    "id": "f06",
+    "name": "Кета",
+    "image": "img/fish/06.jpg",
+    "call": 138
+  },
+  {
+    "id": "f07",
+    "name": "Кижуч",
+    "image": "img/fish/07.jpg",
+    "call": 140
+  },
+  {
+    "id": "f08",
+    "name": "Килька балт.",
+    "image": "img/fish/08.jpg",
+    "call": 137
+  },
+  {
+    "id": "f09",
+    "name": "Килька касп.",
+    "image": "img/fish/09.jpg",
+    "call": 192
+  },
+  {
+    "id": "f10",
+    "name": "Корюшка",
+    "image": "img/fish/10.jpg",
+    "call": 91
+  },
+  {
+    "id": "f11",
+    "name": "Ледяная",
+    "image": "img/fish/11.jpg",
+    "call": 75
+  },
+  {
+    "id": "f12",
+    "name": "Лещ",
+    "image": "img/fish/12.jpg",
+    "call": 105
+  },
+  {
+    "id": "f13",
+    "name": "Сёмга",
+    "image": "img/fish/13.jpg",
+    "call": 219
+  },
+  {
+    "id": "f14",
+    "name": "Макрурус",
+    "image": "img/fish/14.jpg",
+    "call": 60
+  },
+  {
+    "id": "f15",
+    "name": "Минога",
+    "image": "img/fish/15.jpg",
+    "call": 166
+  },
+  {
+    "id": "f16",
+    "name": "Минтай",
+    "image": "img/fish/16.jpg",
+    "call": 70
+  },
+  {
+    "id": "f17",
+    "name": "Мойва",
+    "image": "img/fish/17.jpg",
+    "call": 157
+  },
+  {
+    "id": "f18",
+    "name": "Навага",
+    "image": "img/fish/18.jpg",
+    "call": 73
+  },
+  {
+    "id": "f19",
+    "name": "Чавыча",
+    "image": "img/fish/19.jpg",
+    "call": 148
+  },
+  {
+    "id": "f20",
+    "name": "Налим",
+    "image": "img/fish/20.jpg",
+    "call": 81
+  },
+  {
+    "id": "f21",
+    "name": "Нерка кр.",
+    "image": "img/fish/21.jpg",
+    "call": 157
+  },
+  {
+    "id": "f22",
+    "name": "Нототения мрам.",
+    "image": "img/fish/22.jpg",
+    "call": 156
+  },
+  {
+    "id": "f23",
+    "name": "Окунь мор.",
+    "image": "img/fish/23.jpg",
+    "call": 117
+  },
+  {
+    "id": "f24",
+    "name": "Окунь реч.",
+    "image": "img/fish/24.jpg",
+    "call": 82
+  },
+  {
+    "id": "f25",
+    "name": "Осетр",
+    "image": "img/fish/25.jpg",
+    "call": 164
+  },
+  {
+    "id": "f26",
+    "name": "Палтус",
+    "image": "img/fish/26.jpg",
+    "call": 103
+  },
+  {
+    "id": "f27",
+    "name": "Пеламида",
+    "image": "img/fish/27.jpg",
+    "call": 217
+  },
+  {
+    "id": "f28",
+    "name": "Пикша",
+    "image": "img/fish/28.jpg",
+    "call": 73
+  },
+  {
+    "id": "f29",
+    "name": "Путассу",
+    "image": "img/fish/29.jpg",
+    "call": 72
+  },
+  {
+    "id": "f30",
+    "name": "Рыба-сабля",
+    "image": "img/fish/30.jpg",
+    "call": 110
+  },
+  {
+    "id": "f31",
+    "name": "Рыбец касп.",
+    "image": "img/fish/31.jpg",
+    "call": 98
+  },
+  {
+    "id": "f32",
+    "name": "Сазан",
+    "image": "img/fish/32.jpg",
+    "call": 121
+  },
+  {
+    "id": "f33",
+    "name": "Сайра круп.",
+    "image": "img/fish/33.jpg",
+    "call": 262
+  },
+  {
+    "id": "f34",
+    "name": "Сайра мел.",
+    "image": "img/fish/33.jpg",
+    "call": 143
+  },
+  {
+    "id": "f35",
+    "name": "Салака",
+    "image": "img/fish/35.jpg",
+    "call": 121
+  },
+  {
+    "id": "f36",
+    "name": "Севрюга",
+    "image": "img/fish/36.jpg",
+    "call": 160
+  },
+  {
+    "id": "f37",
+    "name": "Сельдь",
+    "image": "img/fish/37.jpg",
+    "call": 242
+  },
+  {
+    "id": "f38",
+    "name": "Сиг",
+    "image": "img/fish/38.jpg",
+    "call": 144
+  },
+  {
+    "id": "f39",
+    "name": "Скумбрия",
+    "image": "img/fish/39.jpg",
+    "call": 153
+  },
+  {
+    "id": "f40",
+    "name": "Сом",
+    "image": "img/fish/40.jpg",
+    "call": 144
+  },
+  {
+    "id": "f41",
+    "name": "Ставрида",
+    "image": "img/fish/41.jpg",
+    "call": 119
+  },
+  {
+    "id": "f42",
+    "name": "Стерлядь",
+    "image": "img/fish/42.jpg",
+    "call": 320
+  },
+  {
+    "id": "f43",
+    "name": "Судак",
+    "image": "img/fish/43.jpg",
+    "call": 83
+  },
+  {
+    "id": "f44",
+    "name": "Треска",
+    "image": "img/fish/44.jpg",
+    "call": 75
+  },
+  {
+    "id": "f45",
+    "name": "Тунец",
+    "image": "img/fish/45.jpg",
+    "call": 96
+  },
+  {
+    "id": "f46",
+    "name": "Угольная рыба",
+    "image": "img/fish/46.jpg",
+    "call": 158
+  },
+  {
+    "id": "f47",
+    "name": "Угорь мор.",
+    "image": "img/fish/47.jpg",
+    "call": 94
+  },
+  {
+    "id": "f48",
+    "name": "Угорь",
+    "image": "img/fish/47.jpg",
+    "call": 333
+  },
+  {
+    "id": "f49",
+    "name": "Хек",
+    "image": "img/fish/49.jpg",
+    "call": 86
+  },
+  {
+    "id": "f50",
+    "name": "Щука",
+    "image": "img/fish/50.jpg",
+    "call": 82
+  },
+  {
+    "id": "f51",
+    "name": "Язь",
+    "image": "img/fish/51.jpg",
+    "call": 117
+  },
+  {
+    "id": "f52",
+    "name": "Мидии",
+    "image": "img/fish/52.jpg",
+    "call": 77
+  },
+  {
+    "id": "f53",
+    "name": "Устрица",
+    "image": "img/fish/53.jpg",
+    "call": 73
+  },
+  {
+    "id": "f54",
+    "name": "Креветки дальневост.",
+    "image": "img/fish/54.jpg",
+    "call": 134
+  },
+  {
+    "id": "f56",
+    "name": "Кальмар",
+    "image": "img/fish/56.jpg",
+    "call": 75
+  },
+  {
+    "id": "f57",
+    "name": "Раки",
+    "image": "img/fish/57.jpg",
+    "call": 76
+  },
+  {
+    "id": "f58",
+    "name": "Краб",
+    "image": "img/fish/58.jpg",
+    "call": 69
+  },
+  {
+    "id": "f59",
+    "name": "Креветки",
+    "image": "img/fish/54.jpg",
+    "call": 83
+  },
+  {
+    "id": "f60",
+    "name": "Капуста мор.",
+    "image": "img/fish/60.jpg",
+    "call": 5
+  },
+  {
+    "id": "f61",
+    "name": "Трепанг",
+    "image": "img/fish/61.jpg",
+    "call": 35
+  },
+  {
+    "id": "f62",
+    "name": "Лосось",
+    "image": "img/fish/62.jpg",
+    "call": 187
+  },
+  {
+    "id": "f63",
+    "name": "Лобстер",
+    "image": "img/fish/63.jpg",
+    "call": 91
+  },
+  {
+    "id": "f64",
+    "name": "Белужья зер.",
+    "image": "img/fish/64.jpg",
+    "call": 235
+  },
+  {
+    "id": "f65",
+    "name": "Горбуши зер.",
+    "image": "img/fish/65.jpg",
+    "call": 230
+  }
+]

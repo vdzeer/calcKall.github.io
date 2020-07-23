@@ -1,0 +1,104 @@
+[
+  {
+    "id": "ra01",
+    "name": "Яйцо куриное",
+    "image": "img/raznoe/01.jpg",
+    "call": 157
+  },
+  {
+    "id": "ra02",
+    "name": "Яичный порошок",
+    "image": "img/raznoe/02.jpg",
+    "call": 542
+  },
+  {
+    "id": "ra03",
+    "name": "Сухой белок",
+    "image": "img/raznoe/03.jpg",
+    "call": 336
+  },
+  {
+    "id": "ra04",
+    "name": "Сухой желток",
+    "image": "img/raznoe/04.jpg",
+    "call": 632
+  },
+  {
+    "id": "ra05",
+    "name": "Яйцо перепелиное",
+    "image": "img/raznoe/05.jpg",
+    "call": 168
+  },
+  {
+    "id": "ra06",
+    "name": "Бобы",
+    "image": "img/raznoe/06.jpg",
+    "call": 58
+  },
+  {
+    "id": "ra07",
+    "name": "Горох",
+    "image": "img/raznoe/07.jpg",
+    "call": 313
+  },
+  {
+    "id": "ra09",
+    "name": "Соя",
+    "image": "img/raznoe/09.jpg",
+    "call": 395
+  },
+  {
+    "id": "ra10",
+    "name": "Фасоль",
+    "image": "img/raznoe/10.jpg",
+    "call": 309
+  },
+  {
+    "id": "ra11",
+    "name": "Чечевица",
+    "image": "img/raznoe/11.jpg",
+    "call": 310
+  },
+  {
+    "id": "ra12",
+    "name": "Грибы белые",
+    "image": "img/raznoe/12.jpg",
+    "call": 34
+  },
+  {
+    "id": "ra13",
+    "name": "Маслята",
+    "image": "img/raznoe/13.jpg",
+    "call": 19
+  },
+  {
+    "id": "ra14",
+    "name": "Опята",
+    "image": "img/raznoe/14.jpg",
+    "call": 17
+  },
+  {
+    "id": "ra15",
+    "name": "Подберёзовики",
+    "image": "img/raznoe/15.jpg",
+    "call": 31
+  },
+  {
+    "id": "ra16",
+    "name": "Шампиньоны",
+    "image": "img/raznoe/16.jpg",
+    "call": 27
+  },
+  {
+    "id": "ra17",
+    "name": "Масло растительное",
+    "image": "img/raznoe/17.jpg",
+    "call": 899
+  },
+  {
+    "id": "ra18",
+    "name": "Масло арахисовое",
+    "image": "img/raznoe/18.jpg",
+    "call": 899
+  }
+]

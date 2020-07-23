@@ -1,0 +1,188 @@
+[
+  {
+    "id": "m01",
+    "name": "Сыр Брынза",
+    "image": "img/milk/01.jpg",
+    "call": 260
+  },
+  {
+    "id": "m02",
+    "name": "Йогурт 1.5%",
+    "image": "img/milk/02.jpg",
+    "call": 51
+  },
+  {
+    "id": "m03",
+    "name": "Кефир нежирный",
+    "image": "img/milk/03.jpg",
+    "call": 30
+  },
+  {
+    "id": "m04",
+    "name": "Кефир жирный",
+    "image": "img/milk/03.jpg",
+    "call": 59
+  },
+  {
+    "id": "m05",
+    "name": "Молоко",
+    "image": "img/milk/05.jpg",
+    "call": 58
+  },
+  {
+    "id": "m06",
+    "name": "Сгущенное молоко",
+    "image": "img/milk/06.jpg",
+    "call": 135
+  },
+  {
+    "id": "m07",
+    "name": "Ряженка",
+    "image": "img/milk/07.jpg",
+    "call": 85
+  },
+  {
+    "id": "m08",
+    "name": "Сливки 10%",
+    "image": "img/milk/08.jpg",
+    "call": 118
+  },
+  {
+    "id": "m09",
+    "name": "Сливки 20%",
+    "image": "img/milk/08.jpg",
+    "call": 205
+  },
+  {
+    "id": "m10",
+    "name": "Сметана 10%",
+    "image": "img/milk/10.jpg",
+    "call": 116
+  },
+  {
+    "id": "m11",
+    "name": "Сметана 20%",
+    "image": "img/milk/10.jpg",
+    "call": 206
+  },
+  {
+    "id": "m12",
+    "name": "Творожная масса",
+    "image": "img/milk/12.jpg",
+    "call": 345
+  },
+  {
+    "id": "m13",
+    "name": "Сыр Российский",
+    "image": "img/milk/13.jpg",
+    "call": 371
+  },
+  {
+    "id": "m14",
+    "name": "Сыр Голландский",
+    "image": "img/milk/14.jpg",
+    "call": 361
+  },
+  {
+    "id": "m15",
+    "name": "Сыр Швейцарский",
+    "image": "img/milk/15.jpg",
+    "call": 369
+  },
+  {
+    "id": "m16",
+    "name": "Сыр Пошехонский",
+    "image": "img/milk/16.jpg",
+    "call": 334
+  },
+  {
+    "id": "m17",
+    "name": "Сыр плавленный",
+    "image": "img/milk/17.jpg",
+    "call": 226
+  },
+  {
+    "id": "m18",
+    "name": "Сыр колбасный",
+    "image": "img/milk/18.jpg",
+    "call": 275
+  },
+  {
+    "id": "m19",
+    "name": "Сыр Чеддер",
+    "image": "img/milk/19.jpg",
+    "call": 380
+  },
+  {
+    "id": "m20",
+    "name": "Сыр Рокфор",
+    "image": "img/milk/20.jpg",
+    "call": 335
+  },
+  {
+    "id": "m21",
+    "name": "Сулугуни",
+    "image": "img/milk/21.jpg",
+    "call": 286
+  },
+  {
+    "id": "m22",
+    "name": "Творог жирный",
+    "image": "img/milk/22.jpg",
+    "call": 226
+  },
+  {
+    "id": "m23",
+    "name": "Творог нежирный",
+    "image": "img/milk/22.jpg",
+    "call": 86
+  },
+  {
+    "id": "m24",
+    "name": "Творог мягкий",
+    "image": "img/milk/22.jpg",
+    "call": 110
+  },
+  {
+    "id": "m25",
+    "name": "Творог полужирный",
+    "image": "img/milk/22.jpg",
+    "call": 156
+  },
+  {
+    "id": "m26",
+    "name": "Кумыс",
+    "image": "img/milk/26.jpg",
+    "call": 50
+  },
+  {
+    "id": "m27",
+    "name": "Кисляк нежирный",
+    "image": "img/milk/27.jpg",
+    "call": 30
+  },
+  {
+    "id": "m28",
+    "name": "Кисляк жирный",
+    "image": "img/milk/27.jpg",
+    "call": 59
+  },
+  {
+    "id": "m29",
+    "name": "Мороженное молочное",
+    "image": "img/milk/29.jpg",
+    "call": 132
+  },
+  {
+    "id": "m30",
+    "name": "Мороженное сливочное",
+    "image": "img/milk/29.jpg",
+    "call": 183
+  },
+  {
+    "id": "m31",
+    "name": "Мороженное пломбир",
+    "image": "img/milk/29.jpg",
+    "call": 232
+  }
+]

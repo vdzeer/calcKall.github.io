@@ -1,0 +1,188 @@
+[
+  {
+    "id": "fru01",
+    "name": "Абрикосы",
+    "image": "img/fruits/01.jpg",
+    "call": 46
+  },
+  {
+    "id": "fru02",
+    "name": "Айва",
+    "image": "img/fruits/02.jpg",
+    "call": 38
+  },
+  {
+    "id": "fru03",
+    "name": "Алыча",
+    "image": "img/fruits/03.jpg",
+    "call": 34
+  },
+  {
+    "id": "fru04",
+    "name": "Ананас",
+    "image": "img/fruits/04.jpg",
+    "call": 48
+  },
+  {
+    "id": "fru05",
+    "name": "Бананы",
+    "image": "img/fruits/05.jpg",
+    "call": 91
+  },
+  {
+    "id": "fru06",
+    "name": "Вишня",
+    "image": "img/fruits/06.jpg",
+    "call": 49
+  },
+  {
+    "id": "fru07",
+    "name": "Гранат",
+    "image": "img/fruits/07.jpg",
+    "call": 52
+  },
+  {
+    "id": "fru08",
+    "name": "Груша",
+    "image": "img/fruits/08.jpg",
+    "call": 42
+  },
+  {
+    "id": "fru09",
+    "name": "Инжир",
+    "image": "img/fruits/09.jpg",
+    "call": 56
+  },
+  {
+    "id": "fru10",
+    "name": "Киви",
+    "image": "img/fruits/10.jpg",
+    "call": 47
+  },
+  {
+    "id": "fru11",
+    "name": "Персик",
+    "image": "img/fruits/11.jpg",
+    "call": 44
+  },
+  {
+    "id": "fru12",
+    "name": "Рябина",
+    "image": "img/fruits/12.jpg",
+    "call": 56
+  },
+  {
+    "id": "fru13",
+    "name": "Слива",
+    "image": "img/fruits/13.jpg",
+    "call": 43
+  },
+  {
+    "id": "fru14",
+    "name": "Хурма",
+    "image": "img/fruits/14.jpg",
+    "call": 62
+  },
+  {
+    "id": "fru15",
+    "name": "Черешня",
+    "image": "img/fruits/15.jpg",
+    "call": 52
+  },
+  {
+    "id": "fru16",
+    "name": "Шелковица",
+    "image": "img/fruits/16.jpg",
+    "call": 53
+  },
+  {
+    "id": "fru17",
+    "name": "Яблоки",
+    "image": "img/fruits/17.jpg",
+    "call": 46
+  },
+  {
+    "id": "fru18",
+    "name": "Апельсин",
+    "image": "img/fruits/18.jpg",
+    "call": 38
+  },
+  {
+    "id": "fru19",
+    "name": "Грейпфрут",
+    "image": "img/fruits/19.jpg",
+    "call": 35
+  },
+  {
+    "id": "fru20",
+    "name": "Лимон",
+    "image": "img/fruits/20.jpg",
+    "call": 31
+  },
+  {
+    "id": "fru21",
+    "name": "Мандарин",
+    "image": "img/fruits/21.jpg",
+    "call": 38
+  },
+  {
+    "id": "fru22",
+    "name": "Брусника",
+    "image": "img/fruits/22.jpg",
+    "call": 40
+  },
+  {
+    "id": "fru23",
+    "name": "Виноград",
+    "image": "img/fruits/23.jpg",
+    "call": 69
+  },
+  {
+    "id": "fru24",
+    "name": "Голубика",
+    "image": "img/fruits/24.jpg",
+    "call": 37
+  },
+  {
+    "id": "fru25",
+    "name": "Ежевика",
+    "image": "img/fruits/25.jpg",
+    "call": 33
+  },
+  {
+    "id": "fru26",
+    "name": "Земляника",
+    "image": "img/fruits/26.jpg",
+    "call": 41
+  },
+  {
+    "id": "fru27",
+    "name": "Клюква",
+    "image": "img/fruits/27.jpg",
+    "call": 28
+  },
+  {
+    "id": "fru28",
+    "name": "Крыжовник",
+    "image": "img/fruits/28.jpg",
+    "call": 44
+  },
+  {
+    "id": "fru29",
+    "name": "Малина",
+    "image": "img/fruits/29.jpg",
+    "call": 41
+  },
+  {
+    "id": "fru30",
+    "name": "Смородина",
+    "image": "img/fruits/30.jpg",
+    "call": 38
+  },
+  {
+    "id": "fru31",
+    "name": "Черника",
+    "image": "img/fruits/31.jpg",
+    "call": 40
+  }
+]
