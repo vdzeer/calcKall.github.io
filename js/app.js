@@ -5,9 +5,17 @@ const burgerMenu = document.querySelector('.navbar-burger');
 const calcItems = document.querySelector('.calc-body-items');
 const calcList = document.querySelector('.calc-ul');
 const input = document.querySelector('.calc-input');
+const calcBtn = document.querySelector('.calc-basket');
+const modal = document.querySelector('.modal');
+const modalList = document.querySelector('.modal-list');
+const modalOut = document.querySelector('.modal-out');
+
 const first = '#ff5f45', second = '#0798ec', third = '#fc6c7c', fouth = '#fec401';
 const mass = [];
+let arrItems = [];
 let searchText = '';
+let itemPl;
+
 
 const getData = async function(url) {
     const response = await window.fetch(url);
@@ -110,24 +118,91 @@ function createCard(item) {
     const {
         name,
         image,
-        call
+        call,
+        id
     } = item;
 
     const card = `
     <div class="calc-body-item">
         <img src="${image}" alt="image" class="calc-body-item__image"/>
         <span class="calc-body-item__text">${name}</span>
-        <div class="calc-body-item__add">+</div>
+        <div class="calc-body-item__add" data-id="${id}">+</div>
     </div>
     `;
     calcItems.insertAdjacentHTML('beforeend', card);
 }
 
-function init() {
-    getData('./db/fruits.json').then(function(data) {
+async function a(name) {
+    await getData(`./db/${name}.json`).then(function(data) {
         data.forEach(createCard);
     });
-    getItems();
+    itemPl = document.querySelectorAll('.calc-body-item__add');
+    for (const key of itemPl) {
+        key.addEventListener('click', (e) => {
+            addToCart(event.target);
+        })
+    }
+}
+
+async function init() {
+    await getData('./db/fruits.json').then(function(data) {
+        data.forEach(createCard);
+    });
+    await getItems();
+    itemPl = document.querySelectorAll('.calc-body-item__add');
+    for (const key of itemPl) {
+        key.addEventListener('click', (e) => {
+            addToCart(event.target);
+        })
+    }
+}
+
+function addToCart(target) {
+    let cheker = true;
+    arrItems.map(item => {
+        if (target.dataset.id === item) cheker = false;
+    })
+    if (cheker) arrItems.push(target.dataset.id);
+}
+
+function renderItems(arr) {
+    modalList.innerHTML = '';
+    let massiv = [];
+    for (const key of arr) {
+        for (const k of mass) {
+            if (k.id === key) massiv.push(k);
+        }
+    }
+    for (const key of massiv) {
+        const card = `
+            <div class="modal-item">
+                <div class="modal-item-text">
+                    <img src="${key.image}" alt="image">
+                    <span data-id="${key.id}">${key.name}</span>
+                </div>
+                <div class="modal-item-input">
+                    <span>Вес:</span>
+                    <input type="number" placeholder="100" min="0" id="modal-item__input">
+                    <span>гр.</span>
+                    <span class="modal-item-delete">&#10006;</span>
+                </div>
+            </div>
+        `;
+        modalList.insertAdjacentHTML('beforeend', card);
+    }
+    const modalDel = document.querySelectorAll('.modal-item-delete');
+    for (const key of modalDel) {
+        key.addEventListener('click', e => {
+            let name = e.target.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling.dataset.id;
+            arr = arr.filter(item => {
+                if (item !== name) return true
+            });
+            arrItems = arrItems.filter(item => {
+                if (item !== name) return true
+            })
+            renderItems(arr);
+        })
+    }
 }
 
 burger.addEventListener('click', () => {
@@ -139,66 +214,53 @@ burger.addEventListener('click', () => {
 burgerMenu.addEventListener('click', () => {
     burger.classList.toggle('actived');
     burgerMenu.classList.toggle('actived');
-})
+});
+
+calcBtn.addEventListener('click', () => {
+    modal.classList.remove('hided');
+    renderItems(arrItems);
+});
+
+modalOut.addEventListener('click', () => {
+    modal.classList.add('hided');
+});
 
 calcList.addEventListener('click', (event) => {
     let target = event.target.textContent;
     calcItems.innerHTML = '';
     if (event.target.value === undefined) {
-        getData('./db/fruits.json').then(function(data) {
-            data.forEach(createCard);
-        });
+        a('fruits');
     } else {
         switch (target) {
             case 'Крупы и каши':
-                getData('./db/kasha.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('kasha');
                 break;
             case 'Молочные продукты':
-                getData('./db/milk.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('milk');
                 break;
             case 'Морепродукты':
-                getData('./db/fish.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('fish');
                 break;
             case 'Мучные изделия':
-                getData('./db/xleb.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('xleb');
                 break;
             case 'Мясные продукты':
-                getData('./db/sha.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('sha');
                 break;
             case 'Напитки':
-                getData('./db/drink.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('drink');
                 break;
             case 'Овощи и зелень':
-                getData('./db/ovoshi.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('ovoshi');
                 break;
             case 'Орехи и сухофрукты':
-                getData('./db/suhof.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('suhof');
                 break;
             case 'Фрукты и ягоды':
-                getData('./db/fruits.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('fruits');
                 break;
             case 'Разное':
-                getData('./db/raznoe.json').then(function(data) {
-                    data.forEach(createCard);
-                });
+                a('raznoe');
                 break;
         }
     }
@@ -213,7 +275,7 @@ new fullpage('#fullpage', {
     verticalCentered: false,
     navigation: true,
     slidesNavigation: true,
-    normalScrollElements: '#calcMenu, #calcItems'
+    normalScrollElements: '#calcMenu, #calcItems, #modalList'
 });
 
 init();
