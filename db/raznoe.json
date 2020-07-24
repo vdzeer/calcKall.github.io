@@ -30,18 +30,6 @@
     "call": 168
   },
   {
-    "id": "ra06",
-    "name": "Бобы",
-    "image": "img/raznoe/06.jpg",
-    "call": 58
-  },
-  {
-    "id": "ra07",
-    "name": "Горох",
-    "image": "img/raznoe/07.jpg",
-    "call": 313
-  },
-  {
     "id": "ra09",
     "name": "Соя",
     "image": "img/raznoe/09.jpg",
@@ -79,7 +67,7 @@
   },
   {
     "id": "ra15",
-    "name": "Подберёзовики",
+    "name": "Подберезовики",
     "image": "img/raznoe/15.jpg",
     "call": 31
   },
