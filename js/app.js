@@ -166,10 +166,10 @@ function addToCart(target) {
     if (cheker) arrItems.push(target.dataset.id);
 }
 
-function renderItems(arr) {
+function renderItems() {
     modalList.innerHTML = '';
     let massiv = [];
-    for (const key of arr) {
+    for (const key of arrItems) {
         for (const k of mass) {
             if (k.id === key) massiv.push(k);
         }
@@ -203,17 +203,14 @@ function renderItems(arr) {
             item.style.padding = 0;
             item.style.border = 'none';
             item.innerHTML = '';
-            arr = arr.filter(item => {
-                if (item !== name) return true
-            });
             arrItems = arrItems.filter(item => {
                 if (item !== name) return true
             });
             editAmount();
-        })
+        });
     }
     editAmount();
-    addItem(arr, mass);
+    addItem();
 }
 
 function editAmount() {
@@ -237,7 +234,7 @@ function editAmount() {
     });
 }
 
-function addItem(arr, mass) {
+function addItem() {
     const prod = document.querySelector('.modal-add__text');
     const prodCall = document.querySelector('.modal-add__num');
     const addBtn = document.querySelector('.modal-add__btn');
@@ -251,7 +248,7 @@ function addItem(arr, mass) {
         } else if (mass[mass.length - 1].name === name && mass[mass.length - 1].call === call) {
             return false;
         } else {
-            arr.push(`add${add}`);
+            arrItems.push(`add${add}`);
             mass.push({
                 id: `add${add}`,
                 name: name,
@@ -261,7 +258,7 @@ function addItem(arr, mass) {
         }
         prod.value = '';
         prodCall.value = '';
-        renderItems(arr);
+        renderItems();
     });
 }
 
