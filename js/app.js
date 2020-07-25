@@ -11,11 +11,12 @@ const modalList = document.querySelector('.modal-list');
 const modalOut = document.querySelector('.modal-out');
 
 const first = '#ff5f45', second = '#0798ec', third = '#fc6c7c', fouth = '#fec401';
-const mass = [];
+let mass = [];
 let arrItems = [];
 let searchText = '';
 let itemPl;
-
+let accumulator;
+let itemNum = 0;
 
 const getData = async function(url) {
     const response = await window.fetch(url);
@@ -182,7 +183,7 @@ function renderItems(arr) {
                 </div>
                 <div class="modal-item-input">
                     <span>Вес:</span>
-                    <input type="number" placeholder="100" min="0" id="modal-item__input">
+                    <input type="number" placeholder="100" value="0" min="0" id="modal-item__input">
                     <span>гр.</span>
                     <span class="modal-item-delete">&#10006;</span>
                 </div>
@@ -194,15 +195,74 @@ function renderItems(arr) {
     for (const key of modalDel) {
         key.addEventListener('click', e => {
             let name = e.target.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling.dataset.id;
+            let item = e.target.parentElement.parentElement;
+            let inputItem = e.target.parentElement.parentElement.lastChild.previousSibling.childNodes[2].nextSibling.value;
+            inputItem = 0;
+            item.style.width = 0;
+            item.style.height = 0;
+            item.style.padding = 0;
+            item.style.border = 'none';
+            item.innerHTML = '';
             arr = arr.filter(item => {
                 if (item !== name) return true
             });
             arrItems = arrItems.filter(item => {
                 if (item !== name) return true
-            })
-            renderItems(arr);
+            });
+            editAmount();
         })
     }
+    editAmount();
+    addItem(arr, mass);
+}
+
+function editAmount() {
+    const modalInputAmount = document.querySelectorAll('#modal-item__input');
+    const modalCallAmount = document.querySelector('.modal-final__num');
+    const modalGet = document.querySelector('.modal-final__btn');
+    for (const key of modalInputAmount) {
+        key.onclick = function (e) {
+            key.value = '';
+        }
+    }
+    modalGet.addEventListener('click', () => {
+        accumulator = 0;
+        for (const key of modalInputAmount) {
+            let kk = key.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling.dataset.id;
+            let i = mass.find(item => item.id === kk);
+            let amount = i.call/100 * key.value;
+            accumulator += Math.round(amount);
+        }
+        modalCallAmount.textContent = accumulator;
+    });
+}
+
+function addItem(arr, mass) {
+    const prod = document.querySelector('.modal-add__text');
+    const prodCall = document.querySelector('.modal-add__num');
+    const addBtn = document.querySelector('.modal-add__btn');
+    
+    addBtn.addEventListener('click', () => {
+        let name = prod.value,
+            call = prodCall.value,
+            add = itemNum++;
+        if (name === '' || call === '') {
+            return false
+        } else if (mass[mass.length - 1].name === name && mass[mass.length - 1].call === call) {
+            return false;
+        } else {
+            arr.push(`add${add}`);
+            mass.push({
+                id: `add${add}`,
+                name: name,
+                image: "img/white.jpg",
+                call: call
+            });
+        }
+        prod.value = '';
+        prodCall.value = '';
+        renderItems(arr);
+    });
 }
 
 burger.addEventListener('click', () => {

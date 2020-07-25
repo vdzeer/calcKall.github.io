@@ -804,6 +804,10 @@ button::-moz-focus-inner {
   position: absolute;
   width: 90%;
   height: 90%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -60%);
@@ -963,15 +967,14 @@ button::-moz-focus-inner {
   transition: .3s;
 }
 
-.modal-add__btn:hover {
-  background: #fff;
-  color: #000;
-}
-
 .modal-final {
+  position: absolute;
   text-align: right;
   width: 87%;
-  margin: 20px auto 0 auto;
+  bottom: 3%;
+  right: 3%;
+  -webkit-transform: translate(-3%, -3%);
+          transform: translate(-3%, -3%);
   font-size: 32px;
   letter-spacing: 1.5px;
   font-family: 'Comfortaa Bold';
@@ -979,6 +982,20 @@ button::-moz-focus-inner {
 }
 
 .modal-final__text {
+  margin-right: 20px;
+}
+
+.modal-final__btn {
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 22px;
+  background: #004f69;
+  color: #fff;
+  padding: 10px 17px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
   margin-right: 20px;
 }
 

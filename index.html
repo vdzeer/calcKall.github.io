@@ -127,15 +127,16 @@
 			</div>
 			<div class="modal-add">
 				<div class="modal-add-text">
-					<label for="modal-add__text">Название:</label><input type="text" id="modal-add__text" class="modal-add__text" placeholder="Ваш продукт">
-					<label for="modal-add__num">Кол-во калорий на 100гр. :</label><input type="number" id="modal-add__num" class="modal-add__num" placeholder="100">
+					<label for="modal-add__text">Название:</label><input type="text" id="modal-add__text" class="modal-add__text" placeholder="Ваш продукт" required>
+					<label for="modal-add__num">Кол-во калорий на 100гр. :</label><input type="number" id="modal-add__num" class="modal-add__num" placeholder="100" required>
 				</div>
 				<button class="btn modal-add__btn">добавить</button>
 			</div>
 		</div>
 		<div class="modal-final">
+			<button class="btn modal-final__btn">расчитать</button>
 			<span class="modal-final__text">Всего калорий: </span>
-			<span class="modal-final__num">10000</span>
+			<span class="modal-final__num">0</span>
 		</div>
 	</div>
 	<script src="js/fullpage.js"></script>
