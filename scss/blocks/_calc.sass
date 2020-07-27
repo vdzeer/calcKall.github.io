@@ -1,30 +1,27 @@
 .calc
     position: relative
-    &__title
+    &-container
         position: absolute
-        top: 5%
+        top: 50%
         left: 50%
-        transform: translate(-50%, -5%)
+        transform: translate(-50%, -50%)
+    &__title
+        text-align: center
         color: #fff
         font-size: 48px
         letter-spacing: 1.5px
         +bold
     &-wrapper
-        position: absolute
         height: 60vh
         width: 85vw
-        top: 40%
-        left: 50%
-        transform: translate(-50%, -30%)
+        margin: 40px auto 20px auto
         display: flex
         justify-content: space-between
         align-items: center
     &-basket
-        position: absolute
-        bottom: 5%
-        left: 50%
-        transform: translate(-50%, -5%)
+        text-align: center
         &-btn
+            margin: auto
             display: flex
             align-items: center
             text-transform: uppercase
@@ -41,17 +38,16 @@
                 margin-right: 10px
     &-body
         flex-basis: 83%
-        // max-width: 83%
         height: 100%
         background-color: #fff
         border-radius: 30px
         display: flex
         padding: 30px
         &-menu
-            flex-basis: 18%
-            // width: 200px
+            flex-basis: 20%
             height: 100%
             overflow-y: scroll
+            overflow-x: hidden
             &-items
                 margin-top: 20px
                 ul
@@ -84,13 +80,10 @@
             padding: 0 20px
             overflow-y: scroll
             display: flex
-            justify-content: center
             flex-wrap: wrap
         &-item
             position: relative
             display: inline-block
-            // width: 180px
-            // min-width: 180px
             flex-basis: 18%
             height: 120px
             margin: 8px 8px 2px 8px
@@ -113,7 +106,6 @@
                 color: #000
                 text-indent: none
                 user-select: none
-                // text-decoration: underline
                 +bold
             &__add
                 position: absolute
@@ -168,6 +160,8 @@
     transition: .3s
     animation: show .3s 1
     animation-fill-mode: forwards
+    &-container
+        height: 97%
     &-title
         text-align: center
         font-size: 37px
@@ -181,7 +175,6 @@
     &-wrapper
         position: relative
         height: 75%
-        // max-height: 50%
         width: 90%
         margin: auto
         border-radius: 20px
@@ -189,7 +182,6 @@
     &-list
         max-height: 85%
         width: 98%
-        // background-color: #000
         margin: 0 auto
         overflow-y: scroll
     &-item
@@ -251,6 +243,8 @@
             &:focus, &:active
                 border: none
                 border-bottom: 1.5px solid #000
+        &-text
+            display: flex
         &__text
             width: 250px
         &__num
@@ -266,20 +260,15 @@
             text-transform: uppercase
             transition: .3s
     &-final-wr
-        height: 23%
+        height: 70px
         width: 90%
         margin: auto
         margin-top: 1%
     &-final
-        // position: absolute
         text-align: right
         width: 100%
-        // bottom: 3%
-        // right: 3%
-        // transform: translate(-3%, -3%)
         font-size: 32px
         letter-spacing: 1.5px
-        // margin: 10px 20px
         +bold
         &__text
             margin-right: 20px
@@ -306,6 +295,69 @@
     100%
         opacity: 1
 
+// modal
+
+@media (max-height: 650px)
+    .modal
+        &-list
+            max-height: 80%
+        &-wrapper
+            height: 68%
+
+
+@media (max-height: 570px)
+    .modal
+        &-list
+            max-height: 75%
+
+@media (max-height: 510px)
+    .modal
+        &-list
+            max-height: 70%
+
+@media (max-height: 450px)
+    .modal
+        &-list
+            max-height: 60%
+        &-wrapper
+            height: 40%
+
+@media (max-height: 555px)
+    .modal
+        &-wrapper
+            height: 64%
+
+@media (max-height: 490px)
+    .modal
+        &-wrapper
+            height: 60%
+
+@media (max-width: 1380px)
+    .modal
+        &-add
+            &-text
+                font-size: 24px
+
+@media (max-width: 1285px)
+    .modal
+        &-add
+            height: 110px
+            &-text
+                font-size: 24px
+                flex-direction: column
+            &__text
+                width: 200px
+            &__num
+                width: 70px
+
+@media (max-width: 600px)
+    .modal
+        &-add
+            &-text
+                font-size: 24px
+
+
+// calc
 
 @media (max-width: 1836px)
     .calc
@@ -315,6 +367,10 @@
 
 @media (max-width: 1650px)
     .calc
+        &__title
+            margin-bottom: 10px
+        &-wrapper
+            margin: 0px auto 10px auto
         &-body
             &-item
                 flex-basis: 22%
@@ -354,61 +410,21 @@
 @media (max-width: 500px)
     .calc
         &-body
+            &-items
+                justify-content: center
             &-item
                 flex-basis: 70%
 
-@media (orientation: landscape) and (max-width: 860px) and (max-height: 400px)
-    .calc
-        &-input
-            top: 5%
-        &-wrapper
-            height: 63vh
-            width: 75vw
-            top: 39%
-            transform: translate(-50%, -30%)
-        &__title
-            font-size: 28px
-        &-body
-            &-item
-                flex-basis: 43%
-        &-basket
-            bottom: 3%
-            transform: translate(-50%, -3%)
-            &-btn
-                padding: 11px 17px
-                &__img 
-                    height: 20px
-                    width: 20px
-                    margin-right: 10px
-
-
-@media (orientation: landscape) and (max-width: 860px) and (max-height: 330px)
-    .calc
-        &-wrapper
-            height: 58vh
-            top: 41%
-        &-body
-            &-item
-                height: 100px
-
 @media (max-width: 410px)
     .calc
-        &-wrapper
-            height: 70vh
-            width: 75vw
-            top: 37%
-            transform: translate(-50%, -30%)
         &__title
-            font-size: 28px
+            font-size: 32px
+        &-wrapper
+            width: 78vw
         &-body
             &-item
-                flex-basis: 85%
+                flex-basis: 100%
+                overflow: hidden
         &-basket
-            bottom: 3%
-            transform: translate(-50%, -3%)
             &-btn
-                padding: 11px 17px
-                &__img 
-                    height: 20px
-                    width: 20px
-                    margin-right: 10px
+                padding: 10px 15px

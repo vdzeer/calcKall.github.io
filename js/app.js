@@ -5,7 +5,7 @@ const burgerMenu = document.querySelector('.navbar-burger');
 const calcItems = document.querySelector('.calc-body-items');
 const calcList = document.querySelector('.calc-ul');
 const input = document.querySelector('.calc-input');
-const calcBtn = document.querySelector('.calc-basket');
+const calcBtn = document.querySelector('.calc-basket-btn');
 const modal = document.querySelector('.modal');
 const modalList = document.querySelector('.modal-list');
 const modalOut = document.querySelector('.modal-out');
@@ -64,13 +64,19 @@ async function getItems() {
 function seacrhFunc(arr) {
     input.onkeypress = function (event) {
         searchText += event.key;
-        input.onkeydown = (event) => {
-            if (event.key === 'Backspace') searchText = searchText.slice(0, -1);
+        input.onkeydown = (e) => {
+            if (e.key === 'Backspace') searchText = searchText.slice(0, -1);
             if (searchText === '') {
-            calcItems.innerHTML = '';
+                calcItems.innerHTML = '';
                 getData('./db/fruits.json').then(function(data) {
                     data.forEach(createCard);
                 });
+                itemPl = document.querySelectorAll('.calc-body-item__add');
+                for (const key of itemPl) {
+                    key.addEventListener('click', (e) => {
+                        addToCart(e.target);
+                    })
+                }
             } else {
                 findEq(searchText);
             }
@@ -80,6 +86,12 @@ function seacrhFunc(arr) {
             getData('./db/fruits.json').then(function(data) {
                 data.forEach(createCard);
             });
+            itemPl = document.querySelectorAll('.calc-body-item__add');
+            for (const key of itemPl) {
+                key.addEventListener('click', (e) => {
+                    addToCart(e.target);
+                })
+            }
         } else {
             findEq(searchText);
         }
@@ -93,6 +105,12 @@ function seacrhFunc(arr) {
             if (str !== '' && (str === word || str === word.toLowerCase() || str === word.toUpperCase())) {
                 createCard(key);
             }
+        }
+        itemPl = document.querySelectorAll('.calc-body-item__add');
+        for (const key of itemPl) {
+            key.addEventListener('click', (e) => {
+                addToCart(event.target);
+            })
         }
     }
 }
