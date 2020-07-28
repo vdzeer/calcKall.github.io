@@ -27,7 +27,7 @@
 					<li data-menuanchor="Main"><a href="#Main" class="navbar-link">Главная</a></li>
 					<li data-menuanchor="Food"><a href="#Food" class="navbar-link">Рацион питания</a></li>
 					<li data-menuanchor="Calc"><a href="#Calc" class="navbar-link">Калькулятор</a></li>
-					<li><a href="#" class="navbar-link">О нас</a></li>
+					<li data-menuanchor="About"><a href="#About" class="navbar-link">О нас</a></li>
 				</ul>
 				<div class="navbar__burger">
 					<span></span>
@@ -40,7 +40,7 @@
 			<li data-menuanchor="Main"><a href="#Main" class="navbar-link">Главная</a></li>
 			<li data-menuanchor="Food"><a href="#Food" class="navbar-link">Рацион питания</a></li>
 			<li data-menuanchor="Calc"><a href="#Calc" class="navbar-link">Калькулятор</a></li>
-			<li><a href="#" class="navbar-link">О нас</a></li>
+			<li data-menuanchor="About"><a href="#About" class="navbar-link">О нас</a></li>
 		</ul>
 	</div>
 	<div id="fullpage">
@@ -117,6 +117,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="section about">
+			<div class="about-container">
+				<div class="about-text">
+					<div class="about-title">Калькулятор <span class="hero-text_red">Your Helper</span></div>
+					<div class="about-description">Данный сервис создан для подсчёта калорийности вашего питания. Все данные были взяты из открытых источников Интернета. <br> <br> Как пользоваться сайтом? Ознакомьтесь по видео-подсказке ниже ;)</div>
+					<!-- video -->
+				</div>
+				<div class="about-form">
+					<span class="about-form__title">Остались вопросы?</span>
+					<form action="#">
+						<input type="text" class="about-form__name" placeholder="Ваше имя">
+						<textarea cols="30" rows="10" class="about-form__text" placeholder="Ваше сообщение"></textarea>
+						<input type="button" value="Отправить" class="about-form__btn">
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="modal hided">
 		<div class="modal-container">
@@ -139,11 +156,14 @@
 			<div class="modal-final-wr">
 				<div class="modal-final">
 					<button class="btn modal-final__btn">расчитать</button>
-					<span class="modal-final__text">Всего калорий: </span>
-					<span class="modal-final__num">0</span>
+					<span class="modal-final__text">Всего калорий: <span class="modal-final__num">0</span></span>
+					
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="notation hided">
+		<span>&#10004; Продукт добавлен</span>
 	</div>
 	<script src="js/fullpage.js"></script>
 	<script src="js/app.js"></script>

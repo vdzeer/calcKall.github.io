@@ -9,6 +9,7 @@ const calcBtn = document.querySelector('.calc-basket-btn');
 const modal = document.querySelector('.modal');
 const modalList = document.querySelector('.modal-list');
 const modalOut = document.querySelector('.modal-out');
+const notation = document.querySelector('.notation');
 
 const first = '#ff5f45', second = '#0798ec', third = '#fc6c7c', fouth = '#fec401';
 let mass = [];
@@ -178,6 +179,10 @@ async function init() {
 
 function addToCart(target) {
     let cheker = true;
+    notation.classList.remove('hided');
+    setTimeout(() => {
+        notation.classList.add('hided');
+    }, 1000);
     arrItems.map(item => {
         if (target.dataset.id === item) cheker = false;
     })
@@ -256,7 +261,6 @@ function addItem() {
     const prod = document.querySelector('.modal-add__text');
     const prodCall = document.querySelector('.modal-add__num');
     const addBtn = document.querySelector('.modal-add__btn');
-    
     addBtn.addEventListener('click', () => {
         let name = prod.value,
             call = prodCall.value,
@@ -343,7 +347,7 @@ calcList.addEventListener('click', (event) => {
 
 new fullpage('#fullpage', {
     menu: 'menu',
-    anchors: ['Main', 'Food', 'Calc'],
+    anchors: ['Main', 'Food', 'Calc', 'About'],
     sectionsColor: [first, second, third, fouth],
     recordHistory: false,
     scrollingSpeed: 900,
