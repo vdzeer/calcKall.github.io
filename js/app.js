@@ -64,9 +64,9 @@ async function getItems() {
 }
 
 function seacrhFunc(arr) {
-    input.onkeypress = function (event) {
+    input.addEventListener('keypress', (event) => {
         searchText += event.key;
-        input.onkeydown = (e) => {
+        input.addEventListener('keydown', (e) => {
             if (e.key === 'Backspace') searchText = searchText.slice(0, -1);
             if (searchText === '') {
                 calcItems.innerHTML = '';
@@ -82,7 +82,7 @@ function seacrhFunc(arr) {
             } else {
                 findEq(searchText);
             }
-        }
+        });
         if (searchText === '') {
             calcItems.innerHTML = '';
             getData('./db/fruits.json').then(function(data) {
@@ -97,7 +97,7 @@ function seacrhFunc(arr) {
         } else {
             findEq(searchText);
         }
-    }
+    });
     
     function findEq(str) {
         calcItems.innerHTML = '';
