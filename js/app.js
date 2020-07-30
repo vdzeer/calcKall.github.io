@@ -10,6 +10,7 @@ const modal = document.querySelector('.modal');
 const modalList = document.querySelector('.modal-list');
 const modalOut = document.querySelector('.modal-out');
 const notation = document.querySelector('.notation');
+const video = document.querySelector('.about-video');
 
 const first = '#ff5f45', second = '#0798ec', third = '#fc6c7c', fouth = '#fec401';
 let mass = [];
@@ -344,6 +345,10 @@ calcList.addEventListener('click', (event) => {
         }
     }
 });
+
+video.addEventListener('click', () => {
+    video.setAttribute('controls', 'controls');
+})
 
 new fullpage('#fullpage', {
     menu: 'menu',

@@ -12,9 +12,9 @@
         +bold
     &-block
         position: absolute
-        top: 40%
+        top: 50%
         left: 50%
-        transform: translate(-50%, -30%)
+        transform: translate(-50%, -50%)
         height: 80vh
         width: 70vw
         display: flex
@@ -74,21 +74,18 @@
 
 @media (max-width: 880px)
     .food
+        position: relative
         &__title
             font-size: 42px
         &-block
-            top: 40%
-            left: 50%
-            transform: translate(-50%, -30%)
-            // margin-top: 85px
+            position: absolute
+            margin-top: 65px
             flex-wrap: wrap
             justify-content: center
             align-items: center
         &-item
-            height: 29vh
-            flex-basis: 85%
-            &:last-child
-                margin-top: -50px
+            height: 30vh
+            flex-basis: 52%
             &:hover
                 transform: scale(1);
                 .food-item_hover
@@ -99,38 +96,28 @@
                     border-radius: 0
                     background-color: none
                     opacity: 0
-        &-btn
-            font-size: 23px
-            padding: 18px 15px
-            border-radius: 15px
-            transition: .3s
-            &:active
-                background: #fff
-                color: #004f69
+            &__btn
+                font-size: 23px
+                padding: 18px 15px
+                height: 85px
+                border-radius: 15px
+                transition: .3s
+                &:active
+                    background: #fff
+                    color: #004f69
 
-@media (orientation: landscape) and (max-width: 880px)
+@media (max-width: 530px)
     .food
-        &__title
-            font-size: 32px
         &-block
-            top: 15%
-            left: 50%
-            transform: translate(-50%, -30%)
-            margin-top: 85px
-            flex-wrap: nowrap
-            justify-content: space-between
-            align-items: center
+            margin-top: 35px
         &-item
-            height: 60vh
-            flex-basis: 49%
-            margin-bottom: 0
-            &:last-child
-                margin-top: 0px
-        &-btn
-            font-size: 23px
-            padding: 18px 15px
-            border-radius: 15px
-            transition: .3s
-            &:active
-                background: #fff
-                color: #004f69
+            flex-basis: 77%
+            &__btn
+                font-size: 16px
+                padding: 18px 15px
+                height: 85px
+                border-radius: 15px
+                transition: .3s
+                &:active
+                    background: #fff
+                    color: #004f69

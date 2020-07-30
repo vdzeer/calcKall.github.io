@@ -17,9 +17,16 @@
     &-title
         font-size: 34px
         +bold
+    &-video
+        margin-top: 20px
+        width: 400px
+        height: 230px
+        outline: none
+        &:focus
+            outline: none
     &-description
         margin-top: 10px
-        font-size: 22px
+        font-size: 20px
     &-form
         flex-basis: 40%
         text-align: left
@@ -87,3 +94,68 @@
             transition: .3s
             &:hover
                 color: #f00
+
+
+@media ( max-width: 1305px )
+    .about
+        &-video
+            width: 380px
+            height: 210px
+
+@media ( max-width: 1170px )
+    .about
+        &-container
+            justify-content: center
+        &-text
+            display: none
+            flex-basis: 0%
+        &-form
+            flex-basis: 90%
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+
+@media ( max-width: 790px )
+    .about
+        &-container
+            top: 25%
+            transform: translate(-50%, -25%)
+    .footer
+        height: 18vh
+        display: flex
+        align-items: center
+        justify-content: center
+        &-block
+            justify-content: center
+            flex-direction: column
+            font-size: 15px
+        &-item
+            flex-basis: 50%
+            text-align: center
+        &-other
+            a
+                text-decoration: none
+                color: #fff
+                transition: .3s
+                &:hover
+                    color: #f00
+
+@media ( max-width: 435px )
+    .about
+        &-form
+            &__title
+                font-size: 26px
+            form
+            &__name
+                width: 200px
+            &__text
+                width: 250px
+    .footer
+        width: 100vw
+        height: 21vh
+        &-block
+            font-size: 14px
+            width: 70vw
+            height: 19vh
