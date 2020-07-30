@@ -64,26 +64,44 @@ async function getItems() {
 }
 
 function seacrhFunc(arr) {
-    input.addEventListener('keypress', (event) => {
-        searchText += event.key;
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'Backspace') searchText = searchText.slice(0, -1);
-            if (searchText === '') {
-                calcItems.innerHTML = '';
-                getData('./db/fruits.json').then(function(data) {
-                    data.forEach(createCard);
-                });
-                itemPl = document.querySelectorAll('.calc-body-item__add');
-                for (const key of itemPl) {
-                    key.addEventListener('click', (e) => {
-                        addToCart(e.target);
-                    })
-                }
-            } else {
-                findEq(searchText);
-            }
-        });
-        if (searchText === '') {
+    // input.addEventListener('keypress', (event) => {
+    //     searchText += event.key;
+    //     input.addEventListener('keydown', (e) => {
+    //         if (e.key === 'Backspace') searchText = searchText.slice(0, -1);
+    //         if (searchText === '') {
+    //             calcItems.innerHTML = '';
+    //             getData('./db/fruits.json').then(function(data) {
+    //                 data.forEach(createCard);
+    //             });
+    //             itemPl = document.querySelectorAll('.calc-body-item__add');
+    //             for (const key of itemPl) {
+    //                 key.addEventListener('click', (e) => {
+    //                     addToCart(e.target);
+    //                 })
+    //             }
+    //         } else {
+    //             findEq(searchText);
+    //         }
+    //     });
+    //     if (searchText === '') {
+    //         calcItems.innerHTML = '';
+    //         getData('./db/fruits.json').then(function(data) {
+    //             data.forEach(createCard);
+    //         });
+    //         itemPl = document.querySelectorAll('.calc-body-item__add');
+    //         for (const key of itemPl) {
+    //             key.addEventListener('click', (e) => {
+    //                 addToCart(e.target);
+    //             })
+    //         }
+    //     } else {
+    //         findEq(searchText);
+    //     }
+    // });
+    
+    input.addEventListener('change', e => {
+        let q = input.value;
+        if (q === '') {
             calcItems.innerHTML = '';
             getData('./db/fruits.json').then(function(data) {
                 data.forEach(createCard);
@@ -95,10 +113,10 @@ function seacrhFunc(arr) {
                 })
             }
         } else {
-            findEq(searchText);
+            findEq(q);
         }
     });
-    
+
     function findEq(str) {
         calcItems.innerHTML = '';
         let len = str.length;
