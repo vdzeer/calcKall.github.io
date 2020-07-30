@@ -130,10 +130,11 @@
 				</div>
 				<div class="about-form">
 					<span class="about-form__title">Остались вопросы?</span>
-					<form action="#">
-						<input type="text" class="about-form__name" placeholder="Ваше имя">
+					<form action="mail.php" method="POST">
+						<input type="text" name="user_name" class="about-form__name" placeholder="Ваше имя">
+						<input type="text" name="user_mail" class="about-form__name about-form__mail" placeholder="Ваш e-mail">
 						<textarea cols="30" rows="10" class="about-form__text" placeholder="Ваше сообщение"></textarea>
-						<input type="button" value="Отправить" class="about-form__btn">
+						<input type="button" name="user_text" value="Отправить" class="about-form__btn">
 					</form>
 				</div>
 			</div>

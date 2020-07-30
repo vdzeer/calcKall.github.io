@@ -1472,6 +1472,10 @@ button::-moz-focus-inner {
   outline: none;
 }
 
+.about-form__mail {
+  margin-top: 10px;
+}
+
 .about-form__text {
   resize: none;
   padding: 10px 19px;
