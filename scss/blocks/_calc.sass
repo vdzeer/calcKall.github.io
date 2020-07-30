@@ -81,6 +81,13 @@
             overflow-y: scroll
             display: flex
             flex-wrap: wrap
+            &__no
+                display: block
+                text-align: center
+                margin: auto
+                max-width: 500px
+                font-size: 28px
+                +bold
         &-item
             position: relative
             display: inline-block
@@ -130,6 +137,19 @@
         padding: 7px
         margin-top: 2px
         border: .5px solid #000
+    &-btn
+        font-size: 15px
+        margin-top: 4px
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        justify-content: center
+        letter-spacing: 1.5px
+        font-weight: 700
+        background: #004f69
+        color: #fff
+        padding: 8px 10px
+        border-radius: 5px
     &-ad
         flex-basis: 15%
         height: 100%
@@ -420,6 +440,15 @@
 
 @media (max-width: 490px)
     .modal
+        top: 0%
+        left: 50%
+        transform: translate(-50%, 0%);
+        margin-top: 20px
+        &-out
+            font-size: 20px
+            right: 4%
+        &-list
+            max-height: 70%
         &-add
             height: 140px
             &-text
@@ -488,10 +517,14 @@
 
 @media (max-width: 1300px)
     .calc
+        &-search
+            display: flex
+            align-items: center
+            justify-content: space-between
         &-input
-            position: absolute
-            left: 50%
-            transform: translate(-50%, 0)
+            // position: absolute
+            // left: 50%
+            // transform: translate(-50%, 0)
             width: 80%
             max-width: 100%
             text-align: center
@@ -514,6 +547,8 @@
 
 @media (max-width: 707px)
     .calc
+        &-search
+            flex-direction: column
         &-body
             &-item
                 flex-basis: 43%
@@ -524,7 +559,7 @@
             top: 0%
             left: 50%
             transform: translate(-50%, 0);
-            margin-top: 30px
+            margin-top: 70px
         &-body
             &-items
                 justify-content: center

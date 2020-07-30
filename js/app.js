@@ -5,7 +5,9 @@ const burgerMenu = document.querySelector('.navbar-burger');
 const calcItems = document.querySelector('.calc-body-items');
 const calcList = document.querySelector('.calc-ul');
 const input = document.querySelector('.calc-input');
+const calcBtnSearch = document.querySelector('.calc-btn');
 const calcBtn = document.querySelector('.calc-basket-btn');
+const noExist = document.querySelector('.calc-body-items__no');
 const modal = document.querySelector('.modal');
 const modalList = document.querySelector('.modal-list');
 const modalOut = document.querySelector('.modal-out');
@@ -99,7 +101,24 @@ function seacrhFunc(arr) {
     //     }
     // });
     
-    input.addEventListener('change', (e) => {
+    // input.addEventListener('change', (e) => {
+    //     let searchText = input.value;
+    //     if (searchText === '') {
+    //         calcItems.innerHTML = '';
+    //         getData('./db/fruits.json').then(function(data) {
+    //             data.forEach(createCard);
+    //         });
+    //         itemPl = document.querySelectorAll('.calc-body-item__add');
+    //         for (const key of itemPl) {
+    //             key.addEventListener('click', (e) => {
+    //                 addToCart(e.target);
+    //             })
+    //         }
+    //     } else {
+    //         findEq(searchText);
+    //     }
+    // });
+    calcBtnSearch.addEventListener('click', () => {
         let searchText = input.value;
         if (searchText === '') {
             calcItems.innerHTML = '';
@@ -120,9 +139,11 @@ function seacrhFunc(arr) {
     function findEq(str) {
         calcItems.innerHTML = '';
         let len = str.length;
+        let exist = false;
         for (const key of arr) {
             let word = key.name.slice(0, len);
             if (str !== '' && (str === word || str === word.toLowerCase() || str === word.toUpperCase())) {
+                exist = true;
                 createCard(key);
             }
         }
@@ -132,6 +153,10 @@ function seacrhFunc(arr) {
                 addToCart(event.target);
             })
         }
+        if (!exist) {
+            let is = '<span class="calc-body-items__no">Данный продукт не найден! Вы можете добавить его сами в корзине.</span>'
+            calcItems.insertAdjacentHTML('afterbegin', is);
+        } 
     }
 }
 

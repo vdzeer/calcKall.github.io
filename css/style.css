@@ -703,6 +703,16 @@ button::-moz-focus-inner {
       flex-wrap: wrap;
 }
 
+.calc-body-items__no {
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+  font-size: 28px;
+  font-family: 'Comfortaa Bold';
+  font-weight: 700;
+}
+
 .calc-body-item {
   position: relative;
   display: inline-block;
@@ -773,6 +783,27 @@ button::-moz-focus-inner {
   padding: 7px;
   margin-top: 2px;
   border: .5px solid #000;
+}
+
+.calc-btn {
+  font-size: 15px;
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  background: #004f69;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
 }
 
 .calc-ad {
@@ -1214,6 +1245,20 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 490px) {
+  .modal {
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    margin-top: 20px;
+  }
+  .modal-out {
+    font-size: 20px;
+    right: 4%;
+  }
+  .modal-list {
+    max-height: 70%;
+  }
   .modal-add {
     height: 140px;
   }
@@ -1312,11 +1357,18 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 1300px) {
+  .calc-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .calc-input {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
     width: 80%;
     max-width: 100%;
     text-align: center;
@@ -1349,6 +1401,12 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 707px) {
+  .calc-search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .calc-body-item {
     -ms-flex-preferred-size: 43%;
         flex-basis: 43%;
@@ -1361,7 +1419,7 @@ button::-moz-focus-inner {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    margin-top: 30px;
+    margin-top: 70px;
   }
   .calc-body-items {
     -webkit-box-pack: center;
