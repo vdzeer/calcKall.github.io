@@ -99,9 +99,9 @@ function seacrhFunc(arr) {
     //     }
     // });
     
-    input.addEventListener('change', e => {
-        let q = input.value;
-        if (q === '') {
+    input.addEventListener('change', (e) => {
+        let searchText = input.value;
+        if (searchText === '') {
             calcItems.innerHTML = '';
             getData('./db/fruits.json').then(function(data) {
                 data.forEach(createCard);
@@ -113,7 +113,7 @@ function seacrhFunc(arr) {
                 })
             }
         } else {
-            findEq(q);
+            findEq(searchText);
         }
     });
 
@@ -134,6 +134,10 @@ function seacrhFunc(arr) {
         }
     }
 }
+
+input.addEventListener('active', () => {
+    console.log(123);
+})
 
 function takeColor() {
     let counter = document.body.classList.value,

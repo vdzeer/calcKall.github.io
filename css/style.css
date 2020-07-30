@@ -1355,7 +1355,7 @@ button::-moz-focus-inner {
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .calc-body-items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
