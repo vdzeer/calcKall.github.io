@@ -451,19 +451,29 @@ button::-moz-focus-inner {
   opacity: .7;
 }
 
-.food-btn {
+.food-item__btn {
   z-index: 999;
   position: absolute;
   text-transform: uppercase;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 1.5px;
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 700;
+  height: 180px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #004f69;
+  background: #0798ec;
   color: #fff;
   padding: 28px 25px;
   border-radius: 15px;
@@ -471,9 +481,16 @@ button::-moz-focus-inner {
   transition: .3s;
 }
 
-.food-btn:hover {
+.food-item__btn:hover {
   background: #fff;
-  color: #004f69;
+}
+
+.food-item__btn:hover a {
+  color: #0798ec;
+}
+
+.food-item__btn a {
+  color: #fff;
 }
 
 @media (max-width: 880px) {
@@ -1481,5 +1498,85 @@ button::-moz-focus-inner {
 .about-form__btn:focus, .about-form__btn:active {
   border: none;
   outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 15vh;
+  background-color: #333;
+}
+
+.footer-block {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-size: 19px;
+  width: 70vw;
+  height: 15vh;
+}
+
+.footer-item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.footer-other a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-other a:hover {
+  color: #f00;
+}
+
+body {
+  background-color: #0798ec;
+}
+
+.newnavbar {
+  background-color: #0798ec;
+}
+
+.newburger.actived {
+  top: 5%;
+}
+
+.newcontainer {
+  padding: 0 25px;
+  margin-top: 150px;
+  color: #fff;
+}
+
+.newcontainer span {
+  font-size: 22px;
+}
+
+.newcontainer ul {
+  margin-top: 40px;
+  max-width: 900px;
+}
+
+.newcontainer ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .newcontainer {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

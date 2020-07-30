@@ -44,25 +44,33 @@
             transform: scale(1.03);
             .food-item_hover
                 opacity: .7
-    &-btn
-        z-index: 999
-        position: absolute
-        text-transform: uppercase
-        text-align: center
-        letter-spacing: 1.5px
-        font-size: 38px
-        font-weight: 700
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        background: #004f69
-        color: #fff
-        padding: 28px 25px
-        border-radius: 15px
-        transition: .3s
-        &:hover
-            background: #fff
-            color: #004f69
+        &__btn
+            z-index: 999
+            position: absolute
+            text-transform: uppercase
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            letter-spacing: 1.5px
+            font-size: 32px
+            font-weight: 700
+            height: 180px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background: #0798ec
+            color: #fff
+            padding: 28px 25px
+            border-radius: 15px
+            transition: .3s
+            &:hover
+                background: #fff
+                a
+                    color: #0798ec
+            a
+                color: #fff
+
 
 @media (max-width: 880px)
     .food
